@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="de787f81-808a-4259-b2c9-9e951bd0675e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM data_penyakit]]>
+	</queryString>
+	<field name="Id_Penyakit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Penyakit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Definisi_Penyakit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Solusi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<textField pattern="h.mm.ss a">
+				<reportElement x="455" y="0" width="100" height="20" uuid="bfa4b3f8-26ab-42cc-bf51-e5fd2b77ffb8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-6" y="90" width="555" height="1" uuid="ff39222f-7cdc-4f84-b1f1-22f6ec0f51df"/>
+			</line>
+			<staticText>
+				<reportElement x="219" y="0" width="207" height="43" forecolor="#660066" uuid="31fcdcbc-dc73-4199-9561-1ffbb7543ed7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Klinik bersalin ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="40" width="358" height="43" forecolor="#990099" uuid="41438cf6-dcdd-4241-ad8d-2f6ea5ccdcd0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jl. Zambrud Raya, Perum, Taman Griya Asri Blok C7 No. 01, Rt 003 Rw 012, Kel. Cilebut Barat., Kec. Sukaraja, Kab. Bogor, Jawa Barat 16610]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" onErrorType="Icon">
+				<reportElement x="45" y="0" width="75" height="90" uuid="250eed9a-d9d9-4c97-9548-3475943328a4"/>
+				<imageExpression><![CDATA["C:\\Users\\dennis adzua firdaus\\Downloads\\Klinik bersalin.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="126" y="0" width="329" height="64" uuid="c9a42b81-bcb5-4de7-870b-4072c66d503b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Penyakit]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="45" height="20" backcolor="#CCCCCC" uuid="6cb0e801-a619-48d2-973b-fd0a30986c92"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="45" y="0" width="100" height="20" backcolor="#CCCCCC" uuid="0b6d009b-9a74-41e5-b58b-94baef2b20ef"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Penyakit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="145" y="0" width="202" height="20" backcolor="#CCCCCC" uuid="3d052db6-8e4a-4061-b480-bc35979a19a8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Definisi Penyakit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="347" y="0" width="208" height="20" backcolor="#CCCCCC" uuid="14db3fb4-682d-477e-a0bf-239f9284008b"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Solusi]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="108" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="45" height="108" uuid="feae412e-f0f6-4b45-a5ac-472dead4489f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id_Penyakit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="0" width="202" height="108" uuid="3bff1aee-3c3a-49b4-b95b-97ac7aece1e6"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Definisi_Penyakit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="0" width="208" height="108" uuid="07f7d70f-b6fb-4372-a27c-d40e9fadd499"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Solusi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="100" height="108" uuid="c51705af-1867-4c42-b3a6-16ac891bb28c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama_Penyakit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="419" y="62" width="136" height="20" uuid="090a7625-5e5b-43c0-9b10-56f577ea9449"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Indrawani S. Tr. Keb]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="0" width="36" height="20" uuid="44f37422-1557-492c-b51e-f3a7fd37a345"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Bogor,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="f93d6540-a68e-4c44-a88c-0f7934a4d94e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="bcfca1e0-7b2c-41f5-be6b-f7bd1d181975"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
