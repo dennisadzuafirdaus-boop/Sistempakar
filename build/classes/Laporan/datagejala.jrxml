@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fad45b05-8bf3-40cb-ac2e-ea9e0d3a0ff8">
+	<property name="ireport.zoom" value="1.0000000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM data_gejala]]>
+	</queryString>
+	<field name="Id_Gejala" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nama_Gejala" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<textField pattern="h.mm.ss a">
+				<reportElement x="455" y="0" width="100" height="20" uuid="95f7f4dd-dbb9-41bf-a69b-b6b5ca63f583"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame" onErrorType="Icon">
+				<reportElement x="10" y="-1" width="75" height="90" uuid="96455658-8fde-46aa-ab7f-a5f795704935"/>
+				<imageExpression><![CDATA["C:\\Users\\dennis adzua firdaus\\Downloads\\Klinik bersalin.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="177" y="-1" width="207" height="43" forecolor="#660066" uuid="2a401223-2b96-4051-89e8-3b53b33c611e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Klinik bersalin ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="42" width="358" height="43" forecolor="#990099" uuid="1f1b0914-255b-40ea-af73-ade664e1fb1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jl. Zambrud Raya, Perum, Taman Griya Asri Blok C7 No. 01, Rt 003 Rw 012, Kel. Cilebut Barat., Kec. Sukaraja, Kab. Bogor, Jawa Barat 16610]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="f35adcba-ef8f-4281-9c95-44ba89038c42"/>
+			</line>
+			<staticText>
+				<reportElement x="109" y="1" width="329" height="64" uuid="274415a5-f41d-4d2c-9f5e-785f688b28a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Algerian" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Gejala]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="55" height="20" backcolor="#999999" uuid="0a444284-afb2-4d6c-b796-ff8378b3022c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Id Gejala]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="55" y="0" width="500" height="20" backcolor="#999999" uuid="140c757b-c330-4591-8885-89b4ac43a1b9"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Gejala]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="aaf13d64-c963-40bc-9ac5-050ce0d595d0"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id_Gejala}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="1" width="500" height="20" uuid="27d04955-0460-412c-81f0-824790fd7835"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nama_Gejala}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement x="419" y="0" width="36" height="20" uuid="9e7ca9d0-b329-44e3-b14e-89950e186ac1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Bogor,]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="6c5f76e0-42f8-4b48-ba6f-d2384015a9cb"/>
+			</line>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="9042c0b1-06a5-4c26-aab0-23955f044530"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="77" width="136" height="20" uuid="fea942c3-e499-4961-a499-af2ba288f985"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Indrawani S. Tr. Keb]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
